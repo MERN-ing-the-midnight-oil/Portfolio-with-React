@@ -22,7 +22,7 @@ const EmailContactForm = () => {
 			)
 			.then(
 				(result) => {
-					alert("you sent it!");
+					alert("your message has been sent!");
 				},
 				(error) => {
 					alert("something went wrong!");
