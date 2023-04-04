@@ -23,12 +23,23 @@ export default function Portfolio() {
 			title: "What's in Your Cart?",
 			subtitle: "Building the back end for an existing e-commerce site",
 			description:
-				"The shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to connect with a MySQL database. The 'Deployed' URL shows a walkthrough video.",
+				"This shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to connect with a MySQL database. The 'Deployed' URL shows a walkthrough video.",
 			repo: "https://github.com/Noctiluca-scintillans/E-Commerce-Back-End",
 			deployed_URL:
 				"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
 			image:
 				"https://cdn.midjourney.com/c218358e-91e1-40da-b2ab-577c3fc9705d/grid_0.png",
+		},
+		{
+			Id: 2,
+			title: "Movie Picker",
+			subtitle: "movies movies movies",
+			description:
+				"The shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to connect with a MySQL database. The 'Deployed' URL shows a walkthrough video.",
+			repo: "https://github.com/hayni100/Movie-Recs",
+			deployed_URL: "https://hayni100.github.io/Movie-Recs/",
+			image:
+				"https://cdn.midjourney.com/a0dcda47-f18b-4887-9d50-578a4f6a1aed/grid_0.png",
 		},
 		{
 			Id: 3,
@@ -39,7 +50,7 @@ export default function Portfolio() {
 			repo: "https://github.com/Noctiluca-scintillans/MVC-Tech-Blog",
 			deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
 			image:
-				"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png", // TODO
+				"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png",
 		},
 		{
 			Id: 4,
@@ -108,7 +119,7 @@ export default function Portfolio() {
 							<Card.Link
 								className="App-link"
 								href={item.deployed_URL}>
-								Deployed App
+								Deployed
 							</Card.Link>
 						</Card.Body>
 					</Card>
