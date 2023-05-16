@@ -6,18 +6,29 @@ function NavTabs({ currentPage, handlePageChange }) {
 	//these props were given by parent, container.js
 	return (
 		<>
-			<header>
-				<h1>
-					{" "}
-					Rhys J. Smoker
+			<header
+				style={{
+					backgroundImage: `url(${process.env.PUBLIC_URL}/midnightOIL.png)`,
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+				}}>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "column",
+						alignItems: "center",
+					}}>
 					<img
-						src="https://res.cloudinary.com/dubimtz4j/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1677806548/RhysSelfie_j2uq18.jpg"
+						src={process.env.PUBLIC_URL + "/profilepic.jpeg"}
+						alt="me wearing a button up shirt and pastel colored mountains as a background"
 						width={250}
-						alt="portrait of rhys"
-						border="1px solid"
+						style={{ border: "1px solid" }}
 						id="rhys-portrait"
 					/>
-				</h1>
+					<figcaption style={{ marginTop: "0.5rem" }}>
+						Rhys J. Smoker
+					</figcaption>
+				</div>
 				<ul className="nav nav-tabs">
 					<li className="nav-item">
 						<a
@@ -42,17 +53,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 							Portfolio
 						</a>
 					</li>
-					<li className="nav-item">
-						<a
-							href="#contact"
-							onClick={() => handlePageChange("contact")}
-							// Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-							className={
-								currentPage === "contact" ? "nav-link active" : "nav-link"
-							}>
-							Contact Me
-						</a>
-					</li>
+
 					<li className="nav-item">
 						<a
 							href="#resume"

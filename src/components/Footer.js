@@ -3,9 +3,12 @@ import { MDBFooter } from "mdb-react-ui-kit";
 
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { BsStackOverflow } from "react-icons/bs";
 
 export default function Footer() {
+	const email = "r.smoker@gmail.com";
+	const subject = "Reaching Out";
+	const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+
 	return (
 		<MDBFooter className="text-center text-lg-start text-reset">
 			<section className="d-flex justify-content-center justify-content-center p-4 border-bottom">
@@ -15,8 +18,8 @@ export default function Footer() {
 				<div>
 					<a
 						style={{ marginLeft: "3rem" }}
-						href="https://stackoverflow.com/users/9012884/rhys-smoker">
-						<BsStackOverflow />
+						href={mailtoLink}>
+						Email Me
 					</a>
 
 					<a

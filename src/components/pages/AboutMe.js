@@ -3,14 +3,6 @@ import React from "react";
 export default function AboutMe() {
 	return (
 		<div align="center">
-			{/* <h1>About Rhys</h1>
-			<img
-				src="https://res.cloudinary.com/dubimtz4j/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1677806548/RhysSelfie_j2uq18.jpg"
-				width={250}
-				alt="portrait of rhys"
-				border="1px solid"
-				id="rhys-portrait"
-			/> */}
 			<p align="left">
 				"As a creative problem-solver with a passion for full-stack web design
 				and a diverse educational background in science, art, and pedagogy, I
