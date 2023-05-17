@@ -7,8 +7,8 @@ export default function Resume() {
 				<a
 					className="button"
 					href="RhysDev.pdf"
-					download="RhysDev.pdf">
-					Download Resume
+					download="Resume_Rhys J Smoker.pdf">
+					Download Resume (PDF)
 				</a>
 			</button>
 		</div>

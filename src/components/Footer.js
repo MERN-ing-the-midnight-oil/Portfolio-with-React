@@ -30,7 +30,7 @@ export default function Footer() {
 
 					<a
 						style={{ marginLeft: "3rem" }}
-						href="https://github.com/Noctiluca-scintillans">
+						href="https://github.com/MERN-ing-the-midnight-oil">
 						<BsGithub />
 					</a>
 				</div>
