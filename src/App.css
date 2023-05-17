@@ -1,14 +1,26 @@
+/* Inactive Tab */
+.nav-link {
+  background-color: #c0eff7 !important; /* Set background color for inactive tabs */
+  color: #232a5a !important;
+}
+
+/* Active Tab */
+.nav-link.active {
+  background-color: #232a5a  !important; /* Set background color for active tab */
+  color: #c0eff7 !important; /* Set text color for active tab */
+}
+
 .project-card {
   width: 16rem !important;
   height: 16rem !important;
   position: relative !important;
-  background-color: #283618;
+  background-color: white;
   overflow-y: scroll;
 }
 
 .project-content {
   position: absolute;
-  background-color: #283618;
+  background-color: whitesmoke;
 
   width: 15rem !important;
  
@@ -34,8 +46,8 @@
 }
 
 #bodystyle {
-  background-color: #283618;
-  color: #f5f5dc;
+  background-color: white;
+  color: black;
   font-size: calc(10px + 2vmin);
 
 }
@@ -45,14 +57,7 @@
   margin: 2%;
 }
 
-/* .App-header {
-  background-color: #283618;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-} */
+
 
 .App-link {
   color: #d4a373;

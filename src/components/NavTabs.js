@@ -27,17 +27,20 @@ function NavTabs({ currentPage, handlePageChange }) {
 								width={250}
 								style={{
 									border: "1px solid",
-									borderRadius: "50%", // Add circular border
+									borderRadius: "50%",
 								}}
 								id="rhys-portrait"
 							/>
 							<figcaption
 								style={{
-									marginTop: "0.5rem",
+									marginTop: "0.2rem",
 									fontSize: "2rem",
 									fontWeight: "bold",
+									color: "#c0eff7",
+									backgroundColor: "#232a5a ",
+									padding: ".2rem 0.6rem",
 								}}>
-								Rhys J. Smoker
+								{" Rhys J. Smoker "}
 							</figcaption>
 						</div>
 						<ul
@@ -48,9 +51,9 @@ function NavTabs({ currentPage, handlePageChange }) {
 								<a
 									href="#aboutMe"
 									onClick={() => handlePageChange("aboutMe")}
-									className={
-										currentPage === "aboutMe" ? "nav-link active" : "nav-link"
-									}>
+									className={`nav-link ${
+										currentPage === "aboutMe" ? "active" : ""
+									}`}>
 									About Me
 								</a>
 							</li>
@@ -58,9 +61,9 @@ function NavTabs({ currentPage, handlePageChange }) {
 								<a
 									href="#portfolio"
 									onClick={() => handlePageChange("portfolio")}
-									className={
-										currentPage === "portfolio" ? "nav-link active" : "nav-link"
-									}>
+									className={`nav-link ${
+										currentPage === "portfolio" ? "active" : ""
+									}`}>
 									Portfolio
 								</a>
 							</li>
@@ -68,9 +71,9 @@ function NavTabs({ currentPage, handlePageChange }) {
 								<a
 									href="#resume"
 									onClick={() => handlePageChange("resume")}
-									className={
-										currentPage === "resume" ? "nav-link active" : "nav-link"
-									}>
+									className={`nav-link ${
+										currentPage === "resume" ? "active" : ""
+									}`}>
 									Resume
 								</a>
 							</li>
