@@ -1,5 +1,8 @@
 import React from "react";
 
+const colorOil = "#c0eff7";
+const colorMidnight = "#232a5a";
+
 function NavTabs({ currentPage, handlePageChange }) {
 	return (
 		<>
@@ -36,9 +39,14 @@ function NavTabs({ currentPage, handlePageChange }) {
 									marginTop: "0.2rem",
 									fontSize: "2rem",
 									fontWeight: "bold",
-									color: "#c0eff7",
-									backgroundColor: "#232a5a ",
+									color: colorOil,
+									backgroundColor: colorMidnight,
 									padding: ".2rem 0.6rem",
+									borderTopLeftRadius: "0.5rem", // Rounded top-left corner
+									borderTopRightRadius: "0.5rem", // Rounded top-right corner
+									borderBottomLeftRadius: "0", // Square bottom-left corner
+									borderBottomRightRadius: "0", // Square bottom-right corner
+									display: "inline-block",
 								}}>
 								{" Rhys J. Smoker "}
 							</figcaption>

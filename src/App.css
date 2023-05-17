@@ -1,13 +1,35 @@
+:root {
+  --color-oil: #c0eff7;
+  --color-midnight: #232a5a;
+}
+
 /* Inactive Tab */
-.nav-link {
-  background-color: #c0eff7 !important; /* Set background color for inactive tabs */
-  color: #232a5a !important;
+header .nav-tabs .nav-item .nav-link {
+  background-color: var(--color-oil) ; /* Set background color for inactive tabs */
+  color: var(--color-midnight) ;
 }
 
 /* Active Tab */
 .nav-link.active {
-  background-color: #232a5a  !important; /* Set background color for active tab */
-  color: #c0eff7 !important; /* Set text color for active tab */
+  background-color: var(--color-midnight) ; /* Set background color for active tab */
+  color: var(--color-oil) ; /* Set text color for active tab */
+  
+  /* Scintillating Animation */
+  animation-name: scintillate; /* Apply the animation */
+  animation-duration: 10s; /* Duration of the animation */
+  animation-iteration-count: infinite; /* Infinite animation loop */
+}
+
+@keyframes scintillate {
+  0% {
+    background-color: var(--color-oil);
+  }
+  50% {
+    background-color: var(--color-midnight);
+  }
+  100% {
+    background-color: var(--color-oil);
+  }
 }
 
 .project-card {
