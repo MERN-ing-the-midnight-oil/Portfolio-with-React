@@ -32,61 +32,115 @@ header .nav-tabs .nav-item .nav-link {
   }
 }
 
+.resume-content {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.resume-content .button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-content .button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resume-content .button-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.resume-content .button-link:hover {
+  color: var(--primary-color);
+}
+
+.resume-content .resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-content .resume-section h2 {
+  margin-top: 0;
+}
+
+.resume-content .resume-section p {
+  margin-bottom: 10px;
+}
+
+.resume-content .resume-section ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.resume-content .resume-section ul li {
+  list-style-type: disc;
+}
+
+.resume-content .resume-section .project {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.resume-content .resume-section .project h3 {
+  margin-top: 0;
+}
+
+.resume-content .resume-section .project p {
+  margin-top: 5px;
+}
+
+.resume-content .resume-section .project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.resume-content .resume-section .project-link:hover {
+  color: var(--secondary-color);
+}
+
+
+/* Portfolio section styling goes here */
 .project-card {
-  width: 16rem !important;
-  height: 16rem !important;
-  position: relative !important;
+  width: 16rem;
+  height: 16rem;
+  position: relative;
   background-color: white;
   overflow-y: scroll;
 }
 
 .project-content {
   position: absolute;
-  background-color: whitesmoke;
-
-  width: 15rem !important;
- 
-  
-}
-
-/* we want to hide img and display content */
-/* we apply the hover to the parent element */
-/* and then add on the child element class to update style */
-
-/* hide the project image */
-.project-card:hover .project-img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: none;
 }
 
-/* show the project content */
 .project-card:hover .project-content {
   display: block;
 }
 
-.hideable {
-  display: none;
+.project-card .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#bodystyle {
-  background-color: white;
-  color: black;
-  font-size: calc(10px + 2vmin);
-
-}
-
-
-#rhys-portrait {
-  margin: 2%;
+.project-card:hover .project-img {
+  opacity: 0;
 }
 
 
 
-.App-link {
-  color: #d4a373;
-  text-decoration: none;
-}
-
-.App-link:hover {
-  color: bisque;
-}
-
+/* Your existing nav tabs styling goes here */
