@@ -32,7 +32,7 @@ export default function Container() {
 	return (
 		//	<div class="p-3 mb-2 bg-dark text-white min-vh-100">
 		<div
-			class="p-3 mb-2 min-vh-100 bodystyle"
+			className="p-3 mb-2 min-vh-100 bodystyle"
 			id="bodystyle">
 			{/* // style={{ backgroundColor: "#283618", color: "#fefae0" }} */}
 			{/* We are passing the currentPage from state and the function to update it */}
