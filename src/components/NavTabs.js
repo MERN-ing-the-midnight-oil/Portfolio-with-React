@@ -48,7 +48,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 									borderBottomRightRadius: "0", // Square bottom-right corner
 									display: "inline-block",
 								}}>
-								{" Rhys J. Smoker "}
+								{" Rhys Smoker "}
 							</figcaption>
 						</div>
 						<ul
