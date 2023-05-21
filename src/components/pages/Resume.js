@@ -30,7 +30,12 @@ const ResumeContent = () => {
 
 			<div className="projects">
 				<div className="project">
-					<h3 className="project-header">What-to-Watch</h3>
+					<h3
+						className="project-header"
+						style={{ fontStyle: "italic" }}>
+						What-to-Watch
+					</h3>
+
 					<p className="project-description">
 						Allows users to find a movie fitting multiple genres. Love horror,
 						comedy, and also animation? Our app suggests watching “The House”
@@ -55,7 +60,12 @@ const ResumeContent = () => {
 				</div>
 
 				<div className="project">
-					<h3 className="project-header">Mail-Me-Seeds</h3>
+					<h3
+						className="project-header"
+						style={{ fontStyle: "italic" }}>
+						Mail-Me-Seeds
+					</h3>
+
 					<p className="project-description">
 						Allows gardeners to share expensive plant seeds with other gardeners
 						instead of letting leftovers expire. Does any one person really need
@@ -79,7 +89,12 @@ const ResumeContent = () => {
 				</div>
 
 				<div className="project">
-					<h3 className="project-header">Ro-sham-boTS</h3>
+					<h3
+						className="project-header"
+						style={{ fontStyle: "italic" }}>
+						Ro-sham-boTS
+					</h3>
+
 					<p className="project-description">
 						A full-stack team-building web app where users communicate in real
 						time to suss out the predictable play habits of robot opponents who
@@ -113,9 +128,7 @@ export default function Resume() {
 			<div className="header">
 				<h1 className="name">Rhys Smoker</h1>
 				<p className="contact-info">Bellingham, WA</p>
-				<p className="contact-info">
-					Phone: 907 209 8448 | Email: r.smoker@gmail.com
-				</p>
+				<p className="contact-info">Email: r.smoker@gmail.com</p>
 				<p className="contact-info">
 					LinkedIn:{" "}
 					<a

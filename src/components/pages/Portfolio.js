@@ -32,10 +32,10 @@ const projects = [
 	},
 	{
 		Id: 2,
-		title: "Movie Picker",
+		title: "What to Watch",
 		subtitle: "movies movies movies",
 		description:
-			"Demonstrates getting information from mulitple third-party API's. This app lets the user pick multiple movie genres, and suggestes titles to watch. Group project.",
+			"Demonstrates getting information from mulitple third-party API's. This app lets the user pick multiple movie genres, and suggests titles to watch. Group project.",
 		repo: "https://github.com/hayni100/Movie-Recs",
 		deployed_URL: "https://hayni100.github.io/Movie-Recs/",
 		image:
