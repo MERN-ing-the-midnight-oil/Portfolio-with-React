@@ -15,7 +15,7 @@ const ResumeContent = () => {
 				</li>
 				<li>
 					Bachelor of Science in Oceanography - Cal Poly Humboldt, Arcata, CA.
-					English department honors for written portfolio. Minor in Studio Art.
+					English department honors for writing portfolio. Minor in Studio Art.
 				</li>
 			</ul>
 
