@@ -32,15 +32,16 @@ const projects = [
 	},
 	{
 		Id: 2,
-		title: "What to Watch",
-		subtitle: "movies movies movies",
+		title: "Genre Genie",
+		subtitle:
+			"A front-end application using API calls to a movie database and local storage",
 		description:
-			"Demonstrates getting information from mulitple third-party API's. This app lets the user pick multiple movie genres, and suggests titles to watch. Group project.",
-		repo: "https://github.com/hayni100/Movie-Recs",
-		deployed_URL: "https://hayni100.github.io/Movie-Recs/",
+			"Demonstrates getting information from mulitple third-party API's. This app lets the user pick multiple movie genres, and suggests titles to watch.",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/Genre-Genie",
+		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/Genre-Genie/",
 		image:
 			"https://cdn.midjourney.com/a0dcda47-f18b-4887-9d50-578a4f6a1aed/grid_0.png",
-		fullStack: false,
+		fullStack: true,
 	},
 	{
 		Id: 3,
@@ -109,7 +110,7 @@ const Portfolio = () => {
 	const nonFullStackProjects = projects.filter((projekt) => !projekt.fullStack);
 	return (
 		<div>
-			<h1>Live, full-stack web-applications</h1>
+			<h1>Live web applications</h1>
 			{fullStackProjects.map((projekt) => (
 				<div class="d-inline-flex p-2">
 					<Card className="project-card square border border-3">

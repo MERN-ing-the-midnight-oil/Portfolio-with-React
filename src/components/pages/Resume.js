@@ -171,7 +171,8 @@ export default function Resume() {
 				<button className="button">
 					<a
 						className="button-link"
-						href="RhysDev.pdf"
+						// href="../../public/Resume_Rhys J Smoker.pdf"
+						href="/Resume_Rhys J Smoker.pdf"
 						download="Resume_Rhys J Smoker.pdf">
 						Download This Resume (PDF)
 					</a>
