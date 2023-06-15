@@ -33,17 +33,19 @@ const ResumeContent = () => {
 					<h3
 						className="project-header"
 						style={{ fontStyle: "italic" }}>
-						What-to-Watch
+						Genre-Genie
 					</h3>
 
 					<p className="project-description">
 						Allows users to find a movie fitting multiple genres. Love horror,
-						comedy, and also animation? Our app suggests watching “The House”
-						which received 7.1/10 stars on IMDB.
+						comedy, and also animation? Genre Genie suggests watching “The
+						House” which received 7.1/10 stars on IMDB.
 					</p>
 					<p className="project-role">
-						Role in project: Concept Ideation, API fetch requests, movie data
-						parsing and rendering.
+						Role in the parent project (What to watch): Concept Ideation, API
+						fetch requests, movie data parsing and rendering. Role after
+						forking: reworked all the parts of "What to Watch" including
+						styling, and renamed project "Genre Genie".
 					</p>
 					<p className="project-technologies">
 						Technologies Used: Git branching workflow, agile development,
@@ -52,9 +54,9 @@ const ResumeContent = () => {
 					<p>
 						Code repository:{" "}
 						<a
-							href="https://github.com/hayni100/Movie-Recs"
+							href="https://github.com/MERN-ing-the-midnight-oil/Genre-Genie"
 							className="project-link">
-							https://github.com/hayni100/Movie-Recs
+							https://mern-ing-the-midnight-oil.github.io/Genre-Genie/
 						</a>
 					</p>
 				</div>
