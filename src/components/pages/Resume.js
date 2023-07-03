@@ -173,9 +173,8 @@ export default function Resume() {
 				<button className="button">
 					<a
 						className="button-link"
-						// href="../../public/Rhys.pdf"
-						href="/Rhys.pdf"
-						download="Rhys Smoker.pdf">
+						href={process.env.PUBLIC_URL + "/Rhys.pdf"}
+						download="Rhys.pdf">
 						Download This Resume (PDF)
 					</a>
 				</button>
