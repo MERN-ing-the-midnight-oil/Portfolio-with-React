@@ -130,7 +130,9 @@ export default function Resume() {
 			<div className="header">
 				<h1 className="name">Rhys Smoker</h1>
 				<p className="contact-info">Bellingham, WA</p>
-				<p className="contact-info">Email: r.smoker@gmail.com</p>
+				<p className="contact-info">
+					Email: merning.the.midnight.oil@gmail.com
+				</p>
 				<p className="contact-info">
 					LinkedIn:{" "}
 					<a

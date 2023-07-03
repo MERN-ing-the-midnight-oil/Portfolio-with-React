@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
 export default function Footer() {
-	const email = "r.smoker@gmail.com";
+	const email = "merning.the.midnight.oil@gmail.com";
 	const subject = "Reaching Out";
 	const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 
