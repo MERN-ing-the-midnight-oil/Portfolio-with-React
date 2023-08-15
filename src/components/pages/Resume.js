@@ -74,7 +74,7 @@ const ResumeContent = () => {
 						to plant 50 kale plants?
 					</p>
 					<p className="project-role">
-						Role in project: Concept Ideation, Models, Views.
+						Role in project: Ideation, Models, Views.
 					</p>
 					<p className="project-technologies">
 						Technologies Used: Node.js and Express.js; Handlebars.js. MySQL &
@@ -83,9 +83,9 @@ const ResumeContent = () => {
 					<p>
 						Code repository:{" "}
 						<a
-							href="https://github.com/TheBluWiz/mail-me-seeds"
+							href="https://github.com/MERN-ing-the-midnight-oil/Seed-Swap"
 							className="project-link">
-							https://github.com/TheBluWiz/mail-me-seeds
+							https://github.com/MERN-ing-the-midnight-oil/Seed-Swap
 						</a>
 					</p>
 				</div>
@@ -113,9 +113,9 @@ const ResumeContent = () => {
 					<p>
 						Code repository:{" "}
 						<a
-							href="https://github.com/katbakr/beat-the-bots"
+							href="https://github.com/MERN-ing-the-midnight-oil/Ro-Sham-botTS"
 							className="project-link">
-							https://github.com/katbakr/beat-the-bots
+							https://github.com/MERN-ing-the-midnight-oil/Ro-Sham-botTS
 						</a>
 					</p>
 				</div>
