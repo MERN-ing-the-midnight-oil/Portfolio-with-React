@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Noctiluca-scintillans.github.io/Portfolio-with-React/",
+  "homepage": "https://MERN-ing-the-midnight-oil.github.io/Portfolio-with-React/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
