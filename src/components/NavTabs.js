@@ -1,22 +1,77 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const colorOil = "#c0eff7";
 const colorMidnight = "#232a5a";
+const images = [
+	`${process.env.PUBLIC_URL}/pour1.png`,
+	`${process.env.PUBLIC_URL}/pour2.png`,
+	`${process.env.PUBLIC_URL}/pour3.png`,
+	`${process.env.PUBLIC_URL}/pour4.png`,
+	`${process.env.PUBLIC_URL}/pour5.png`,
+];
+const fadeDuration = 1000; // 1 second fade duration
+
+function PreloadImages() {
+	return (
+		<div style={{ display: "none" }}>
+			{images.map((src, index) => (
+				<img
+					key={index}
+					src={src}
+					alt="preload"
+				/>
+			))}
+		</div>
+	);
+}
 
 function NavTabs({ currentPage, handlePageChange }) {
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+		}, fadeDuration * 2); // time taken for one fade out + showing the next image fully
+
+		return () => clearInterval(interval);
+	}, []);
+
 	return (
 		<>
+			<PreloadImages />
 			<header style={{ position: "relative" }}>
 				<div
 					style={{
-						backgroundImage: `url(${process.env.PUBLIC_URL}/header-bg.jpg)`,
+						position: "relative",
 						backgroundSize: "cover",
 						backgroundPosition: "right",
 						display: "flex",
 						alignItems: "flex-start",
 						paddingBottom: "2rem",
+						height: "400px",
+						width: "100%",
 					}}>
-					<div style={{ marginLeft: "8%" }}>
+					{images.map((src, index) => (
+						<div
+							key={index}
+							style={{
+								backgroundImage: `url(${src})`,
+								backgroundSize: "cover",
+								backgroundPosition: "center",
+								position: "absolute",
+								top: 0,
+								left: 0,
+								right: 0,
+								bottom: 0,
+								opacity: index === currentImageIndex ? 1 : 0,
+								transition: `opacity ${fadeDuration}ms linear`,
+								zIndex: 1,
+							}}
+						/>
+					))}
+
+					<div style={{ marginLeft: "8%", zIndex: 10 }}>
+						{/* ...rest of your component */}
 						<div
 							style={{
 								position: "relative",
@@ -42,10 +97,10 @@ function NavTabs({ currentPage, handlePageChange }) {
 									color: colorOil,
 									backgroundColor: colorMidnight,
 									padding: ".2rem 0.6rem",
-									borderTopLeftRadius: "0.5rem", // Rounded top-left corner
-									borderTopRightRadius: "0.5rem", // Rounded top-right corner
-									borderBottomLeftRadius: "0", // Square bottom-left corner
-									borderBottomRightRadius: "0", // Square bottom-right corner
+									borderTopLeftRadius: "0.5rem",
+									borderTopRightRadius: "0.5rem",
+									borderBottomLeftRadius: "0",
+									borderBottomRightRadius: "0",
 									display: "inline-block",
 								}}>
 								{" Rhys Smoker "}
@@ -54,7 +109,6 @@ function NavTabs({ currentPage, handlePageChange }) {
 						<ul
 							className="nav nav-tabs"
 							style={{ marginTop: "1rem" }}>
-							{/* Navigation tabs */}
 							<li className="nav-item">
 								<a
 									href="#aboutMe"

@@ -42,7 +42,7 @@ header .nav-tabs .nav-item .nav-link.active:hover {
 }
 
 /* Scintillating Animation */
-@keyframes scintillate {
+/* @keyframes scintillate {
   0% {
     background-color: var(--color-oil);
   }
@@ -52,7 +52,7 @@ header .nav-tabs .nav-item .nav-link.active:hover {
   100% {
     background-color: var(--color-oil);
   }
-}
+} */
 
 /* ... Rest of your CSS code ... */
 
