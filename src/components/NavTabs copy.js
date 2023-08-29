@@ -10,7 +10,7 @@ const images = [
 	`${process.env.PUBLIC_URL}/pour4.png`,
 	`${process.env.PUBLIC_URL}/pour5.png`,
 ];
-const fadeDuration = 5000;
+const fadeDuration = 1000;
 
 function PreloadImages() {
 	return (
@@ -44,6 +44,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 			duration: fadeDuration,
 		},
 	});
+
 	return (
 		<>
 			<PreloadImages />
@@ -60,54 +61,48 @@ function NavTabs({ currentPage, handlePageChange }) {
 							left: 0,
 							right: 0,
 							bottom: 0,
-							zIndex: 0, // Keeps the background behind everything else
+							zIndex: 0,
 						}}
 					/>
 				))}
-				{/* Container for profile image, caption, and navigation links */}
-				<div
-					style={{
-						zIndex: 10, // Ensures the content appears above the background animation
-						display: "flex",
-						flexDirection: "column",
-						alignItems: "center",
-						width: "100%",
-						position: "relative",
-					}}>
-					{/* Profile image */}
-					<img
-						src={process.env.PUBLIC_URL + "/profilepic.jpeg"}
-						alt="portrait of rhys"
-						width={250}
+				<div style={{ marginLeft: "8%", zIndex: 10 }}>
+					<div
 						style={{
-							border: "1px solid",
-							borderRadius: "50%",
-						}}
-						id="rhys-portrait"
-					/>
-
-					{/* Caption below the profile image */}
-					<figcaption
-						style={{
-							marginTop: "0.2rem",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							color: colorOil,
-							backgroundColor: colorMidnight,
-							padding: ".2rem 0.6rem",
-							borderTopLeftRadius: "0.5rem",
-							borderTopRightRadius: "0.5rem",
-							borderBottomLeftRadius: "0",
-							borderBottomRightRadius: "0",
-							display: "inline-block",
+							position: "relative",
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
 						}}>
-						Rhys Smoker
-					</figcaption>
-
-					{/* Navigation links */}
+						<img
+							src={process.env.PUBLIC_URL + "/profilepic.jpeg"}
+							alt="portrait of rhys"
+							width={250}
+							style={{
+								border: "1px solid",
+								borderRadius: "50%",
+							}}
+							id="rhys-portrait"
+						/>
+						<figcaption
+							style={{
+								marginTop: "0.2rem",
+								fontSize: "2rem",
+								fontWeight: "bold",
+								color: colorOil,
+								backgroundColor: colorMidnight,
+								padding: ".2rem 0.6rem",
+								borderTopLeftRadius: "0.5rem",
+								borderTopRightRadius: "0.5rem",
+								borderBottomLeftRadius: "0",
+								borderBottomRightRadius: "0",
+								display: "inline-block",
+							}}>
+							{" Rhys Smoker "}
+						</figcaption>
+					</div>
 					<ul
 						className="nav nav-tabs"
-						style={{ marginTop: "1rem", textAlign: "center" }}>
+						style={{ marginTop: "1rem" }}>
 						<li className="nav-item">
 							<a
 								href="#aboutMe"
