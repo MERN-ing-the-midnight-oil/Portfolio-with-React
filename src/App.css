@@ -1,170 +1,89 @@
-:root {
-  --color-oil: #c0eff7;
-  --color-midnight: #232a5a;
-}
+/* ==============================================
+   General and Utility Styles
+   ============================================== */
 
-/* Inactive Tab */
-header .nav-tabs .nav-item .nav-link {
-  background-color: var(--color-oil);
-  color: var(--color-midnight);
-  border-bottom: 5px solid var(--color-oil);
-}
-
-header .nav-tabs .nav-item:not(:last-child) .nav-link {
-  border-right: 5px solid var(--color-oil); /* Add a right border to all but the last nav button */
-}
-
-/* Active Tab */
-header .nav-tabs .nav-item .nav-link.active {
-  background-color: var(--color-midnight);
-  color: var(--color-oil);
-}
-
-header .nav-tabs .nav-item .nav-link.active,
-header .nav-tabs .nav-item .nav-link.active:focus,
-header .nav-tabs .nav-item .nav-link.active:hover {
-  /* Animated Border */
-  border: 4px solid var(--color-oil);
+   :root {
+    --color-oil: #c0eff7;
+    --color-midnight: #232a5a;
+  }
+  
+  @keyframes border-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(192, 239, 247, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 0 8px rgba(192, 239, 247, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(192, 239, 247, 0.8);
+    }
+  }
+  
+  /* ==============================================
+     Header (NavTabs) Styles
+     ============================================== */
+     /* Header Styles */
+header {
   border-radius: 5px;
-  animation: border-pulse 5s infinite;
+  overflow: hidden;  
+  /* any other existing styles for header */
 }
 
-@keyframes border-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(192, 239, 247, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(192, 239, 247, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(192, 239, 247, 0.8);
-  }
-}
-
-/* Scintillating Animation */
-/* @keyframes scintillate {
-  0% {
+  
+  /* Inactive Tab */
+  header .nav-tabs .nav-item .nav-link {
     background-color: var(--color-oil);
+    color: var(--color-midnight);
+    border-bottom: 5px solid var(--color-oil);
   }
-  50% {
+  
+  header .nav-tabs .nav-item:not(:last-child) .nav-link {
+    border-right: 5px solid var(--color-oil); /* Add a right border to all but the last nav button */
+  }
+  
+  /* Active Tab */
+  header .nav-tabs .nav-item .nav-link.active {
     background-color: var(--color-midnight);
+    color: var(--color-oil);
   }
-  100% {
-    background-color: var(--color-oil);
+  
+  header .nav-tabs .nav-item .nav-link.active,
+  header .nav-tabs .nav-item .nav-link.active:focus,
+  header .nav-tabs .nav-item .nav-link.active:hover {
+    /* Animated Border on active button */
+    border: 4px solid var(--color-oil);
+    border-radius: 5px;
+    animation: border-pulse 5s infinite;
   }
-} */
-
-/* ... Rest of your CSS code ... */
-
-
-.resume-content {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.resume-content .button-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.resume-content .button {
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.resume-content .button-link {
-  color: #fff;
-  text-decoration: none;
-}
-
-.resume-content .button-link:hover {
-  color: var(--primary-color);
-}
-
-.resume-content .resume-section {
-  margin-bottom: 30px;
-}
-
-.resume-content .resume-section h2 {
-  margin-top: 0;
-}
-
-.resume-content .resume-section p {
-  margin-bottom: 10px;
-}
-
-.resume-content .resume-section ul {
-  margin-bottom: 10px;
-  padding-left: 20px;
-}
-
-.resume-content .resume-section ul li {
-  list-style-type: disc;
-}
-
-.resume-content .resume-section .project {
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.resume-content .resume-section .project h3 {
-  margin-top: 0;
-}
-
-.resume-content .resume-section .project p {
-  margin-top: 5px;
-}
-
-.resume-content .resume-section .project-link {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.resume-content .resume-section .project-link:hover {
-  color: var(--secondary-color);
-}
-
-
-/* Portfolio section styling goes here */
-.project-card {
-  width: 16rem;
-  height: 16rem;
-  position: relative;
-  background-color: white;
-  overflow-y: scroll;
-}
-
-.project-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.project-card:hover .project-content {
-  display: block;
-}
-
-.project-card .project-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.project-card:hover .project-img {
-  opacity: 0;
-}
-
-
-
+  
+  /* ==============================================
+     Content Styles
+     ============================================== */
+  
+  /* Resume content styles */
+  .resume-content {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  /* ... [All other resume content styles go here] ... */
+  
+  /* Portfolio section styling */
+  .project-card {
+    width: 16rem;
+    height: 16rem;
+    position: relative;
+    background-color: white;
+    overflow-y: scroll;
+  }
+  
+  /* ... [All other portfolio section styles go here] ... */
+  
+  /* ==============================================
+     Footer (Contact) Styles
+     ============================================== */
+  
+ 
+  
+  

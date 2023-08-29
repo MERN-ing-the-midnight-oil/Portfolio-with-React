@@ -64,81 +64,100 @@ function NavTabs({ currentPage, handlePageChange }) {
 						}}
 					/>
 				))}
-				{/* Container for profile image, caption, and navigation links */}
+
+				{/* Container for all content over the background */}
 				<div
 					style={{
 						zIndex: 10, // Ensures the content appears above the background animation
 						display: "flex",
 						flexDirection: "column",
-						alignItems: "center",
+						alignItems: "flex-start", // Aligns to the start of the flex container
 						width: "100%",
 						position: "relative",
 					}}>
-					{/* Profile image */}
-					<img
-						src={process.env.PUBLIC_URL + "/profilepic.jpeg"}
-						alt="portrait of rhys"
-						width={250}
+					{/* Inner container  */}
+					<div
 						style={{
-							border: "1px solid",
-							borderRadius: "50%",
-						}}
-						id="rhys-portrait"
-					/>
-
-					{/* Caption below the profile image */}
-					<figcaption
-						style={{
-							marginTop: "0.2rem",
-							fontSize: "2rem",
-							fontWeight: "bold",
-							color: colorOil,
-							backgroundColor: colorMidnight,
-							padding: ".2rem 0.6rem",
-							borderTopLeftRadius: "0.5rem",
-							borderTopRightRadius: "0.5rem",
-							borderBottomLeftRadius: "0",
-							borderBottomRightRadius: "0",
-							display: "inline-block",
+							textAlign: "left",
+							display: "flex",
+							flexDirection: "column",
+							alignItems: "center",
+							position: "relative",
+							marginRight: "auto",
 						}}>
-						Rhys Smoker
-					</figcaption>
-
-					{/* Navigation links */}
-					<ul
-						className="nav nav-tabs"
-						style={{ marginTop: "1rem", textAlign: "center" }}>
-						<li className="nav-item">
-							<a
-								href="#aboutMe"
-								onClick={() => handlePageChange("aboutMe")}
-								className={`nav-link ${
-									currentPage === "aboutMe" ? "active" : ""
-								}`}>
-								About Me
-							</a>
-						</li>
-						<li className="nav-item">
-							<a
-								href="#portfolio"
-								onClick={() => handlePageChange("portfolio")}
-								className={`nav-link ${
-									currentPage === "portfolio" ? "active" : ""
-								}`}>
-								Portfolio
-							</a>
-						</li>
-						<li className="nav-item">
-							<a
-								href="#resume"
-								onClick={() => handlePageChange("resume")}
-								className={`nav-link ${
-									currentPage === "resume" ? "active" : ""
-								}`}>
-								Resume
-							</a>
-						</li>
-					</ul>
+						{" "}
+						{/* Changed to textAlign: "left" */}
+						{/* Profile image */}
+						<img
+							src={process.env.PUBLIC_URL + "/profilepic.jpeg"}
+							alt="portrait of rhys"
+							width={250}
+							style={{
+								border: "1px solid",
+								borderRadius: "50%",
+							}}
+							id="rhys-portrait"
+						/>
+						{/* Caption below the profile image */}
+						<figcaption
+							style={{
+								marginTop: "0.2rem",
+								fontSize: "2rem",
+								fontWeight: "bold",
+								color: colorOil,
+								backgroundColor: colorMidnight,
+								padding: ".2rem 0.6rem",
+								borderTopLeftRadius: "0.5rem",
+								borderTopRightRadius: "0.5rem",
+								borderBottomLeftRadius: "0",
+								borderBottomRightRadius: "0",
+							}}>
+							Rhys Smoker
+						</figcaption>
+						{/* Navigation links */}
+						<div
+							className="nav nav-tabs"
+							style={{ marginTop: "1rem", textAlign: "center", width: "100%" }}>
+							{" "}
+							{/* Ensured full width here */}
+							{/* Navigation links */}
+							<ul
+								className="nav nav-tabs"
+								style={{ marginTop: "1rem", textAlign: "center" }}>
+								<li className="nav-item">
+									<a
+										href="#aboutMe"
+										onClick={() => handlePageChange("aboutMe")}
+										className={`nav-link ${
+											currentPage === "aboutMe" ? "active" : ""
+										}`}>
+										About Me
+									</a>
+								</li>
+								<li className="nav-item">
+									<a
+										href="#portfolio"
+										onClick={() => handlePageChange("portfolio")}
+										className={`nav-link ${
+											currentPage === "portfolio" ? "active" : ""
+										}`}>
+										Portfolio
+									</a>
+								</li>
+								<li className="nav-item">
+									<a
+										href="#resume"
+										onClick={() => handlePageChange("resume")}
+										className={`nav-link ${
+											currentPage === "resume" ? "active" : ""
+										}`}>
+										Resume
+									</a>
+								</li>
+								{/* ... any other nav items you might have ... */}
+							</ul>
+						</div>
+					</div>
 				</div>
 			</header>
 		</>
