@@ -55,7 +55,27 @@ header {
     border-radius: 5px;
     animation: border-pulse 5s infinite;
   }
-  
+  /* ==============================================
+   Tagline Styles
+   ============================================== */
+.tagline {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  fontSize: 4rem;
+  color: orange;
+  background-color: rgba(0,0,0,0);
+  whiteSpace: nowrap;
+  textShadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Using media query to hide the tagline on screens smaller than or equal to 768px */
+@media (max-width: 900px) {
+  .tagline {
+      display: none;
+  }
+}
   /* ==============================================
      Content Styles
      ============================================== */

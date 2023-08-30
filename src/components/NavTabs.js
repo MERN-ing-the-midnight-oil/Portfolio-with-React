@@ -3,14 +3,14 @@ import { useTransition, animated } from "react-spring";
 
 const colorOil = "#c0eff7";
 const colorMidnight = "#232a5a";
-const images = [
-	`${process.env.PUBLIC_URL}/pour1.png`,
-	`${process.env.PUBLIC_URL}/pour2.png`,
-	`${process.env.PUBLIC_URL}/pour3.png`,
-	`${process.env.PUBLIC_URL}/pour4.png`,
-	`${process.env.PUBLIC_URL}/pour5.png`,
-];
-const fadeDuration = 5000;
+
+const animationImageCount = 26;
+const images = Array.from(
+	{ length: animationImageCount },
+	(_, index) => `${process.env.PUBLIC_URL}/pour${index + 1}.png`
+);
+
+const fadeDuration = 4000;
 
 function PreloadImages() {
 	return (
@@ -75,7 +75,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 						width: "100%",
 						position: "relative",
 					}}>
-					{/* Inner container  */}
+					{/* Portrait and buttons container  */}
 					<div
 						style={{
 							textAlign: "left",
@@ -84,9 +84,9 @@ function NavTabs({ currentPage, handlePageChange }) {
 							alignItems: "center",
 							position: "relative",
 							marginRight: "auto",
+							marginLeft: "3rem",
 						}}>
 						{" "}
-						{/* Changed to textAlign: "left" */}
 						{/* Profile image */}
 						<img
 							src={process.env.PUBLIC_URL + "/profilepic.jpeg"}
@@ -119,7 +119,6 @@ function NavTabs({ currentPage, handlePageChange }) {
 							className="nav nav-tabs"
 							style={{ marginTop: "1rem", textAlign: "center", width: "100%" }}>
 							{" "}
-							{/* Ensured full width here */}
 							{/* Navigation links */}
 							<ul
 								className="nav nav-tabs"
@@ -157,6 +156,24 @@ function NavTabs({ currentPage, handlePageChange }) {
 								{/* ... any other nav items you might have ... */}
 							</ul>
 						</div>
+					</div>
+					{/* tagline-container */}
+					<div
+						className="tagline"
+						style={{
+							zIndex: 11, // Makes sure the tagline is above other content but below potential pop-ups or modals
+							position: "absolute", // Allows precise placement within the header
+							top: "20%", // Adjust as needed for vertical positioning
+							left: "60%", // Starts the text from the middle of the header
+							transform: "translateX(-50%)", // Centers the text
+							fontSize: "4rem",
+							color: "orange",
+							backgroundColor: "rgba(0,0,0,0)", // Clear background
+							// Other potential styling:
+							whiteSpace: "nowrap", // Keeps the tagline on a single line
+							textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", // Gives a shadow for better readability, adjust as needed
+						}}>
+						MERN-ing the midnight oil.
 					</div>
 				</div>
 			</header>
