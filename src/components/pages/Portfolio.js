@@ -10,7 +10,7 @@ const projects = [
 		subtitle: "A command-line app to manage a company's employee information.",
 		description:
 			"This app is a content managment system built from scratch using Node.js, Inquirer, and MySql.  ",
-		repo: "https://github.com/Noctiluca-scintillans/Employee-Tracker",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/Employee-Tracker",
 		deployed_URL:
 			"https://drive.google.com/file/d/1iJv_3YIaGsj8JPUmZd-GV1ZTAgd9grn9/view",
 		image:
@@ -23,7 +23,7 @@ const projects = [
 		subtitle: "Building the back end for an existing e-commerce site",
 		description:
 			"This shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to connect with a MySQL database. The 'Deployed' URL shows a walkthrough video.",
-		repo: "https://github.com/Noctiluca-scintillans/E-Commerce-Back-End",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/E-Commerce-Back-End",
 		deployed_URL:
 			"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
 		image:
@@ -49,7 +49,7 @@ const projects = [
 		subtitle: "A Content Managment System built from scratch.",
 		description:
 			"This app demonstrates my use of the Model-View-Controller architechtural paradigm. It uses Handlebars.js as the templating language, Sequelize as the ORM(Object Relational Mapping), and the express-session npm package for authentification. ",
-		repo: "https://github.com/Noctiluca-scintillans/MVC-Tech-Blog",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/MVC-Tech-Blog",
 		deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
 		image:
 			"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png",
@@ -61,7 +61,7 @@ const projects = [
 		subtitle: "NoSQL Challenge: Social Network API",
 		description:
 			"This app shows that I can build and structure an API. I used Express.js for routing, a MongoDB database, and the Mongoose ODM. Please note that the `deployed` url will take you to a walk-through video as the APP is not actually deployed. ",
-		repo: "https://github.com/Noctiluca-scintillans/Social-Network-API",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/Social-Network-API",
 		deployed_URL: "https://watch.screencastify.com/v/pOD8r52BeDaPn99UDrVn", //todo do a new walkthrough
 		image:
 			"https://media.discordapp.net/attachments/1042540591650717738/1083449688356835388/Rhys_Smoker_a_mongoose_wearing_a_monocle_as_an_old-fashioned_bo_b19c0c11-8903-4eb9-8f17-ce7004c1fdd4.png?width=1051&height=1051", //todo take a screenshot
@@ -73,7 +73,7 @@ const projects = [
 		subtitle: "A Progressive Web Application text editor",
 		description:
 			" This app creates an object store and includes both Get and Put methods. It works on your desktop without an internet connection. It automatically saves content inside the text editor. It is bundled with webpack and cretes a service worker with workbox that caches static assets. It uses babel in order to use async/await and generates a manifest.json using WebpackPwaManifest plugi-in and can be installed as a PWA (Progressive Web Application).To build this PWA I started with an existing application found here: https://github.com/coding-boot-camp/cautious-meme.",
-		repo: "https://github.com/Noctiluca-scintillans/PWA-Text-Editor ",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/PWA-Text-Editor ",
 		deployed_URL: "https://damp-coast-38671.herokuapp.com/",
 		image:
 			"https://cdn.midjourney.com/c07d972b-8931-4161-9b7b-e3618d096e84/grid_0.png",
