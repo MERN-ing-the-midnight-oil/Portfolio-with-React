@@ -96,7 +96,7 @@ const projects = [
 		title: "Ro-Sham-Bots",
 		subtitle: "A full stack web application",
 		description:
-			"A team-building icebreaker where collegues solve puzzles together",
+			"A team-building icebreaker where colleagues solve puzzles together",
 		repo: "https://github.com/katbakr/beat-the-bots",
 		deployed_URL: "https://beat-the-bots.herokuapp.com/",
 		image:
