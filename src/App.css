@@ -63,11 +63,11 @@ header {
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  fontSize: 4rem;
+  font-size: 4rem;
   color: orange;
   background-color: rgba(0,0,0,0);
-  whiteSpace: nowrap;
-  textShadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Using media query to hide the tagline on screens smaller than or equal to 768px */

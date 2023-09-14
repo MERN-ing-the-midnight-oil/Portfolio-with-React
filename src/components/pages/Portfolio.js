@@ -36,7 +36,7 @@ const projects = [
 		subtitle:
 			"A front-end application using API calls to a movie database and local storage",
 		description:
-			"Demonstrates getting information from mulitple third-party API's. This app lets the user pick multiple movie genres, and suggests titles to watch.",
+			"Demonstrates getting information from multiple third-party API's. This app lets the user pick multiple movie genres, and suggests titles to watch.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/Genre-Genie",
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/Genre-Genie/",
 		image:
