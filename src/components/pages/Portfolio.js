@@ -103,6 +103,18 @@ const projects = [
 			"https://cdn.midjourney.com/a7dd1cb8-0fe2-4f21-be44-6967b38b15b7/grid_0.png",
 		fullStack: true,
 	},
+	{
+		Id: 8,
+		title: "Fade and Flow Animations",
+		subtitle: "A dynamic image animation web application",
+		description:
+			"This is a gallery that will automatically animate series of images that the developer simply drops into the public folder. It includes a tutorial on how to quickly make images using a generative AI tool",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/fade-and-flow",
+		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/fade-and-flow/",
+		image:
+			"https://cdn.midjourney.com/ba7a37d1-d4d9-4e15-92c0-de6b52783426/0_2.png",
+		fullStack: true,
+	},
 ];
 
 const Portfolio = () => {

@@ -152,7 +152,7 @@ export default function Resume() {
 				<p className="contact-info">
 					Portfolio:{" "}
 					<a
-						href="https://MERN-ing-themidnight-oil.github.io/Portfolio-with-React/"
+						href="https://MERN-ing-the-midnight-oil.github.io/Portfolio-with-React/"
 						className="contact-link">
 						https://MERN-ing-themidnight-oil.github.io/Portfolio-with-React/
 					</a>
