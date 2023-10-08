@@ -43,18 +43,18 @@ const projects = [
 			"https://cdn.midjourney.com/a0dcda47-f18b-4887-9d50-578a4f6a1aed/grid_0.png",
 		fullStack: true,
 	},
-	{
-		Id: 3,
-		title: "Blogging with Handlebars",
-		subtitle: "A Content Managment System built from scratch.",
-		description:
-			"This app demonstrates my use of the Model-View-Controller architechtural paradigm. It uses Handlebars.js as the templating language, Sequelize as the ORM(Object Relational Mapping), and the express-session npm package for authentification. ",
-		repo: "https://github.com/MERN-ing-the-midnight-oil/MVC-Tech-Blog",
-		deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
-		image:
-			"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png",
-		fullStack: false,
-	},
+	// {
+	// 	Id: 3,
+	// 	title: "Blogging with Handlebars",
+	// 	subtitle: "A Content Managment System built from scratch.",
+	// 	description:
+	// 		"This app demonstrates my use of the Model-View-Controller architechtural paradigm. It uses Handlebars.js as the templating language, Sequelize as the ORM(Object Relational Mapping), and the express-session npm package for authentification. ",
+	// 	repo: "https://github.com/MERN-ing-the-midnight-oil/MVC-Tech-Blog",
+	// 	deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
+	// 	image:
+	// 		"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png",
+	// 	fullStack: false,
+	// },
 	{
 		Id: 4,
 		title: "Mongoose API",
