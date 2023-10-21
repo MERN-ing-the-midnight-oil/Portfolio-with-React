@@ -80,7 +80,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 6,
+		Id: 9,
 		title: "Mail-Me-Seeds",
 		subtitle: "A full stack web application",
 		description:
@@ -113,6 +113,18 @@ const projects = [
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/fade-and-flow/",
 		image:
 			"https://cdn.midjourney.com/ba7a37d1-d4d9-4e15-92c0-de6b52783426/0_2.png",
+		fullStack: true,
+	},
+	{
+		Id: 6,
+		title: "Other's Covers",
+		subtitle: "A full stack web app using Typescript",
+		description:
+			"Other's Covers is a peer-to-peer book lending library designed for book enthusiasts to share, discover, and manage their personal book collection. It showcases seamless integration with the Google Books API, dynamic forms for enhanced user experience, and conditional rendering based on user authentication. This project demonstrates my proficiency in various technologies such as React Hooks, Context API, state management, Formik, and more. User authentication is secured with JWT, and the app's modular design promotes code reusability and efficient state tracking.",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/others-covers",
+		deployed_URL: "https://others-covers-0f4265de0975.herokuapp.com/",
+		image:
+			"https://cdn.midjourney.com/77889ff9-2234-44d4-93e5-513f702c7778/0_3.png",
 		fullStack: true,
 	},
 ];
