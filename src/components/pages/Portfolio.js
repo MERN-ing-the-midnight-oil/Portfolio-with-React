@@ -5,11 +5,23 @@ import Card from "react-bootstrap/Card";
 
 const projects = [
 	{
+		Id: 6,
+		title: "Other's Covers",
+		subtitle: "A platform facilitating peer-to-peer book lending.",
+		description:
+			"A full stack MERN application showcasing a front-end built with React Hooks and Context API. The back-end uses Formik for form management, JWT for authentication, and is structured with Typescript.",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/others-covers",
+		deployed_URL: "https://others-covers-0f4265de0975.herokuapp.com/",
+		image:
+			"https://cdn.midjourney.com/77889ff9-2234-44d4-93e5-513f702c7778/0_3.png",
+		fullStack: true,
+	},
+	{
 		Id: 1,
 		title: "Employee Tracker!",
-		subtitle: "A command-line app to manage a company's employee information.",
+		subtitle: "A CLI tool for managing a company's employee database.",
 		description:
-			"This app is a content managment system built from scratch using Node.js, Inquirer, and MySql.  ",
+			"Highlights the synergy of Node.js with Inquirer for a responsive command-line interface. Data management is efficiently handled using MySql.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/Employee-Tracker",
 		deployed_URL:
 			"https://drive.google.com/file/d/1iJv_3YIaGsj8JPUmZd-GV1ZTAgd9grn9/view",
@@ -20,9 +32,9 @@ const projects = [
 	{
 		Id: 2,
 		title: "What's in Your Cart?",
-		subtitle: "Building the back end for an existing e-commerce site",
+		subtitle: "Back-end for an e-commerce site.",
 		description:
-			"This shows my mastery of ORM (Object-Relational Mapping). I took a working Express.js API and configured it to use Sequelize to connect with a MySQL database. The 'Deployed' URL shows a walkthrough video.",
+			"The foundation of an e-commerce platform, emphasizing ORM techniques using an Express.js API, Sequelize, and MySQL.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/E-Commerce-Back-End",
 		deployed_URL:
 			"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
@@ -33,10 +45,9 @@ const projects = [
 	{
 		Id: 2,
 		title: "Genre Genie",
-		subtitle:
-			"A front-end application using API calls to a movie database and local storage",
+		subtitle: "A movie suggestion platform based on user-selected genres.",
 		description:
-			"Demonstrates getting information from multiple third-party API's. This app lets the user pick multiple movie genres, and suggests titles to watch.",
+			"Demonstrates the integration of third-party API calls and the effective use of local storage for user preferences and data retrieval.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/Genre-Genie",
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/Genre-Genie/",
 		image:
@@ -58,9 +69,9 @@ const projects = [
 	{
 		Id: 4,
 		title: "Mongoose API",
-		subtitle: "NoSQL Challenge: Social Network API",
+		subtitle: "API for social networking features.",
 		description:
-			"This app shows that I can build and structure an API. I used Express.js for routing, a MongoDB database, and the Mongoose ODM. Please note that the `deployed` url will take you to a walk-through video as the APP is not actually deployed. ",
+			"A back-end API for social networking features, built using Express.js, MongoDB, and Mongoose ODM.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/Social-Network-API",
 		deployed_URL: "https://watch.screencastify.com/v/pOD8r52BeDaPn99UDrVn", //todo do a new walkthrough
 		image:
@@ -70,9 +81,9 @@ const projects = [
 	{
 		Id: 5,
 		title: "Wall of Text",
-		subtitle: "A Progressive Web Application text editor",
+		subtitle: "An offline text editor with auto-save capabilities.",
 		description:
-			" This app creates an object store and includes both Get and Put methods. It works on your desktop without an internet connection. It automatically saves content inside the text editor. It is bundled with webpack and cretes a service worker with workbox that caches static assets. It uses babel in order to use async/await and generates a manifest.json using WebpackPwaManifest plugi-in and can be installed as a PWA (Progressive Web Application).To build this PWA I started with an existing application found here: https://github.com/coding-boot-camp/cautious-meme.",
+			"Exemplifies the power of a Progressive Web App (PWA) using tools like webpack, workbox, babel, and the WebpackPwaManifest plug-in.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/PWA-Text-Editor ",
 		deployed_URL: "https://damp-coast-38671.herokuapp.com/",
 		image:
@@ -82,9 +93,9 @@ const projects = [
 	{
 		Id: 9,
 		title: "Mail-Me-Seeds",
-		subtitle: "A full stack web application",
+		subtitle: "A platform for gardeners and farmers to share vegetable seeds.",
 		description:
-			"This app shows that I can collaborate to design, build, and deploy a full-stack web application. We used agile software development methods and a Git branching workflow to collaboratively develop this product. The concept was mine and demonstrates my creativity.",
+			"Demonstrates my ability to work on a team using agile methods and shows mastery of Model-View-Controller (MVC) architecture. A group project that uses handlebars templating and nodeMailer.",
 		repo: "https://github.com/TheBluWiz/mail-me-seeds",
 		deployed_URL: "https://mail-me-seeds.herokuapp.com/",
 		image:
@@ -94,9 +105,9 @@ const projects = [
 	{
 		Id: 7,
 		title: "Ro-Sham-Bots",
-		subtitle: "A full stack web application",
+		subtitle: "A game where users compete against AI in rock-paper-scissors.",
 		description:
-			"A team-building icebreaker where colleagues solve puzzles together",
+			"A full stack MERN application integrating AI bots and offering real-time user communication using socket.io.",
 		repo: "https://github.com/katbakr/beat-the-bots",
 		deployed_URL: "https://beat-the-bots.herokuapp.com/",
 		image:
@@ -106,25 +117,14 @@ const projects = [
 	{
 		Id: 8,
 		title: "Fade and Flow Animations",
-		subtitle: "A dynamic image animation web application",
+		subtitle:
+			"An automated image animation gallery with generative AI tutorial.",
 		description:
-			"This is a gallery that will automatically animate series of images that the developer simply drops into the public folder. It includes a tutorial on how to quickly make images using a generative AI tool",
+			"This repository allows you to animate sequences of images in a smooth fading transition using React and React-Spring. It's optimized for animating the art made from generative art AI models.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/fade-and-flow",
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/fade-and-flow/",
 		image:
 			"https://cdn.midjourney.com/ba7a37d1-d4d9-4e15-92c0-de6b52783426/0_2.png",
-		fullStack: true,
-	},
-	{
-		Id: 6,
-		title: "Other's Covers",
-		subtitle: "A full stack web app using Typescript",
-		description:
-			"Other's Covers is a peer-to-peer book lending library designed for book enthusiasts to share, discover, and manage their personal book collection. It showcases seamless integration with the Google Books API, dynamic forms for enhanced user experience, and conditional rendering based on user authentication. This project demonstrates my proficiency in various technologies such as React Hooks, Context API, state management, Formik, and more. User authentication is secured with JWT, and the app's modular design promotes code reusability and efficient state tracking.",
-		repo: "https://github.com/MERN-ing-the-midnight-oil/others-covers",
-		deployed_URL: "https://others-covers-0f4265de0975.herokuapp.com/",
-		image:
-			"https://cdn.midjourney.com/77889ff9-2234-44d4-93e5-513f702c7778/0_3.png",
 		fullStack: true,
 	},
 ];
