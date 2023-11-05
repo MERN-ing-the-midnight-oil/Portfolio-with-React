@@ -127,6 +127,20 @@ const projects = [
 			"https://cdn.midjourney.com/ba7a37d1-d4d9-4e15-92c0-de6b52783426/0_2.png",
 		fullStack: true,
 	},
+	{
+		Id: 10,
+		title: "Here Kitty Kitty Score Calculator",
+		subtitle:
+			"A score calculator for the 'Here Kitty Kitty' board game by Fireside Games.",
+		description:
+			"A React-based application that enables players to easily calculate their scores after playing 'Here Kitty Kitty'. It includes interactive elements for score tallying and utilizes state management for dynamic updates.",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/here-kitty-kitty-score-calculator",
+		deployed_URL:
+			"https://mern-ing-the-midnight-oil.github.io/here-kitty-kitty-score-calculator",
+		image:
+			"https://cdn.midjourney.com/7e5e1040-e3a8-4bf1-8f2d-227d2751aeef/0_0.webp",
+		fullStack: true,
+	},
 ];
 
 const Portfolio = () => {
