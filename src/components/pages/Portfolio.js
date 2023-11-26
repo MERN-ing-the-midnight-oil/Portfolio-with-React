@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 
 const projects = [
 	{
-		Id: 1,
+		Id: 2,
 		title: "Other's Covers",
 		subtitle: "A platform facilitating peer-to-peer book lending.",
 		description:
@@ -17,7 +17,7 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 2,
+		Id: 3,
 		title: "Employee Tracker!",
 		subtitle: "A CLI tool for managing a company's employee database.",
 		description:
@@ -30,7 +30,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 3,
+		Id: 4,
 		title: "What's in Your Cart?",
 		subtitle: "Back-end for an e-commerce site.",
 		description:
@@ -43,7 +43,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 4,
+		Id: 5,
 		title: "Genre Genie",
 		subtitle: "A movie suggestion platform based on user-selected genres.",
 		description:
@@ -55,7 +55,7 @@ const projects = [
 		fullStack: true,
 	},
 	// {
-	// 	Id: 5,
+	// 	Id: 6,
 	// 	title: "Blogging with Handlebars",
 	// 	subtitle: "A Content Managment System built from scratch.",
 	// 	description:
@@ -67,7 +67,7 @@ const projects = [
 	// 	fullStack: false,
 	// },
 	{
-		Id: 6,
+		Id: 7,
 		title: "Mongoose API",
 		subtitle: "API for social networking features.",
 		description:
@@ -115,8 +115,8 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 10,
-		title: "Fade and Flow Animations",
+		Id: 9,
+		title: "Fade and Flow Animations using React-Spring",
 		subtitle:
 			"An automated image animation gallery with generative AI tutorial.",
 		description:
@@ -128,8 +128,8 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 11,
-		title: "Here Kitty Kitty Score Calculator",
+		Id: 10,
+		title: "REACT Here Kitty Kitty Score Calculator",
 		subtitle:
 			"A score calculator for the 'Here Kitty Kitty' board game by Fireside Games.",
 		description:
@@ -142,11 +142,11 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 12,
-		title: "Tiles Game",
-		subtitle: "A crossword puzzle-like game built with React.",
+		Id: 1,
+		title: "REACT HOOKS Bananarama Grams",
+		subtitle: "A front-end crossword puzzle-like game built with React.",
 		description:
-			"A full stack MERN application showcasing React Hooks like useState and useEffect for state management, useRef for focus control within the grid, and custom CSS for visual effects. The game allows users to create words on a grid using a set of letter tiles.",
+			"A React app showcasing use of useState, useEffect, and useRef and custom CSS for visual effects. The game partially simulates a popular crossword-style tabletop game.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/tiles-game",
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/tiles-game/",
 		image:
