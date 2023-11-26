@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 
 const projects = [
 	{
-		Id: 6,
+		Id: 1,
 		title: "Other's Covers",
 		subtitle: "A platform facilitating peer-to-peer book lending.",
 		description:
@@ -17,7 +17,7 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 1,
+		Id: 2,
 		title: "Employee Tracker!",
 		subtitle: "A CLI tool for managing a company's employee database.",
 		description:
@@ -30,7 +30,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 2,
+		Id: 3,
 		title: "What's in Your Cart?",
 		subtitle: "Back-end for an e-commerce site.",
 		description:
@@ -43,7 +43,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 2,
+		Id: 4,
 		title: "Genre Genie",
 		subtitle: "A movie suggestion platform based on user-selected genres.",
 		description:
@@ -55,7 +55,7 @@ const projects = [
 		fullStack: true,
 	},
 	// {
-	// 	Id: 3,
+	// 	Id: 5,
 	// 	title: "Blogging with Handlebars",
 	// 	subtitle: "A Content Managment System built from scratch.",
 	// 	description:
@@ -67,7 +67,7 @@ const projects = [
 	// 	fullStack: false,
 	// },
 	{
-		Id: 4,
+		Id: 6,
 		title: "Mongoose API",
 		subtitle: "API for social networking features.",
 		description:
@@ -79,7 +79,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 5,
+		Id: 7,
 		title: "Wall of Text",
 		subtitle: "An offline text editor with auto-save capabilities.",
 		description:
@@ -91,7 +91,7 @@ const projects = [
 		fullStack: false,
 	},
 	{
-		Id: 9,
+		Id: 8,
 		title: "Mail-Me-Seeds",
 		subtitle: "A platform for gardeners and farmers to share vegetable seeds.",
 		description:
@@ -103,7 +103,7 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 7,
+		Id: 9,
 		title: "Ro-Sham-Bots",
 		subtitle: "A game where users compete against AI in rock-paper-scissors.",
 		description:
@@ -115,7 +115,7 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 8,
+		Id: 10,
 		title: "Fade and Flow Animations",
 		subtitle:
 			"An automated image animation gallery with generative AI tutorial.",
@@ -128,7 +128,7 @@ const projects = [
 		fullStack: true,
 	},
 	{
-		Id: 10,
+		Id: 11,
 		title: "Here Kitty Kitty Score Calculator",
 		subtitle:
 			"A score calculator for the 'Here Kitty Kitty' board game by Fireside Games.",
@@ -141,19 +141,31 @@ const projects = [
 			"https://cdn.midjourney.com/7e5e1040-e3a8-4bf1-8f2d-227d2751aeef/0_0.webp",
 		fullStack: true,
 	},
+	{
+		Id: 12,
+		title: "Tiles Game",
+		subtitle: "A crossword puzzle-like game built with React.",
+		description:
+			"A full stack MERN application showcasing React Hooks like useState and useEffect for state management, useRef for focus control within the grid, and custom CSS for visual effects. The game allows users to create words on a grid using a set of letter tiles.",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/tiles-game",
+		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/tiles-game/",
+		image:
+			"https://cdn.midjourney.com/ba0c7b4f-c62e-4f58-93b1-ee32edd9a446/0_2.webp",
+		fullStack: true,
+	},
 ];
 
 const Portfolio = () => {
-	const fullStackProjects = projects.filter((projekt) => projekt.fullStack);
-	const nonFullStackProjects = projects.filter((projekt) => !projekt.fullStack);
+	const fullStackProjects = projects.filter((project) => project.fullStack);
+	const nonFullStackProjects = projects.filter((project) => !project.fullStack);
 	return (
 		<div>
 			<h1>Live web applications</h1>
-			{fullStackProjects.map((projekt) => (
+			{fullStackProjects.map((project) => (
 				<div class="d-inline-flex p-2">
 					<Card className="project-card square border border-3">
 						<img
-							src={projekt.image}
+							src={project.image}
 							className="project-img"
 							alt="..."
 						/>
@@ -162,21 +174,21 @@ const Portfolio = () => {
 							className="p-3 mb-2 hideable project-content"
 							// style={{ backgroundColor: "#606c38" }}
 						>
-							<Card.Title>{projekt.title}</Card.Title>
+							<Card.Title>{project.title}</Card.Title>
 							<Card.Subtitle
 								className="mb-2"
 								style={{ color: "#dda15e" }}>
-								{projekt.subtitle}
+								{project.subtitle}
 							</Card.Subtitle>
-							<Card.Text>{projekt.description}</Card.Text>
+							<Card.Text>{project.description}</Card.Text>
 							<a
 								className="card-link App-link"
-								href={projekt.repo}>
+								href={project.repo}>
 								Repository
 							</a>
 							<Card.Link
 								className="App-link"
-								href={projekt.deployed_URL}>
+								href={project.deployed_URL}>
 								Deployed
 							</Card.Link>
 						</Card.Body>
@@ -184,11 +196,11 @@ const Portfolio = () => {
 				</div>
 			))}
 			<h2>Demonstration projects </h2>
-			{nonFullStackProjects.map((projekt) => (
+			{nonFullStackProjects.map((project) => (
 				<div class="d-inline-flex p-2">
 					<Card className="project-card square border border-3">
 						<img
-							src={projekt.image}
+							src={project.image}
 							className="project-img"
 							alt="..."
 						/>
@@ -197,21 +209,21 @@ const Portfolio = () => {
 							className="p-3 mb-2 hideable project-content"
 							// style={{ backgroundColor: "#606c38" }}
 						>
-							<Card.Title>{projekt.title}</Card.Title>
+							<Card.Title>{project.title}</Card.Title>
 							<Card.Subtitle
 								className="mb-2"
 								style={{ color: "#dda15e" }}>
-								{projekt.subtitle}
+								{project.subtitle}
 							</Card.Subtitle>
-							<Card.Text>{projekt.description}</Card.Text>
+							<Card.Text>{project.description}</Card.Text>
 							<a
 								className="card-link App-link"
-								href={projekt.repo}>
+								href={project.repo}>
 								Repository
 							</a>
 							<Card.Link
 								className="App-link"
-								href={projekt.deployed_URL}>
+								href={project.deployed_URL}>
 								Deployed
 							</Card.Link>
 						</Card.Body>
@@ -223,5 +235,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-//https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
