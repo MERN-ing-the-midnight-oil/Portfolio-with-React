@@ -1,20 +1,33 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+import CustomCard from "../CustomCard";
 
 //array of portfolio objects including title, link to repo, etc
 
 const projects = [
 	{
+		Id: 1,
+		title: "REACT HOOKS Bananarama Grams",
+		subtitle: "A front-end crossword puzzle-like game.",
+		description:
+			"A React app showcasing use of useState, useEffect, and useRef and custom CSS for visual effects. The game partially simulates a popular crossword-style tabletop game.",
+		repo: "https://github.com/MERN-ing-the-midnight-oil/tiles-game",
+		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/tiles-game/",
+		image:
+			"https://cdn.midjourney.com/ba0c7b4f-c62e-4f58-93b1-ee32edd9a446/0_2.webp",
+		liveWeb: true,
+	},
+	{
 		Id: 2,
 		title: "Other's Covers",
-		subtitle: "A platform facilitating peer-to-peer book lending.",
+		subtitle:
+			"A full-stack MERN platform facilitating peer-to-peer book lending.",
 		description:
 			"A full stack MERN application showcasing a front-end built with React Hooks and Context API. The back-end uses Formik for form management, JWT for authentication, and is structured with Typescript.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/others-covers",
 		deployed_URL: "https://others-covers-0f4265de0975.herokuapp.com/",
 		image:
 			"https://cdn.midjourney.com/77889ff9-2234-44d4-93e5-513f702c7778/0_3.png",
-		fullStack: true,
+		liveWeb: true,
 	},
 	{
 		Id: 3,
@@ -27,7 +40,7 @@ const projects = [
 			"https://drive.google.com/file/d/1iJv_3YIaGsj8JPUmZd-GV1ZTAgd9grn9/view",
 		image:
 			"https://cdn.midjourney.com/1a351108-b045-4a0f-9a79-369ef60de8b9/grid_0.png",
-		fullStack: false,
+		liveWeb: false,
 	},
 	{
 		Id: 4,
@@ -40,7 +53,7 @@ const projects = [
 			"https://drive.google.com/file/d/1LqEl-L1l1fmLKjAZYBI0TBsrN4bHrP-Z/view",
 		image:
 			"https://cdn.midjourney.com/c218358e-91e1-40da-b2ab-577c3fc9705d/grid_0.png",
-		fullStack: false,
+		liveWeb: false,
 	},
 	{
 		Id: 5,
@@ -52,7 +65,7 @@ const projects = [
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/Genre-Genie/",
 		image:
 			"https://cdn.midjourney.com/a0dcda47-f18b-4887-9d50-578a4f6a1aed/grid_0.png",
-		fullStack: true,
+		liveWeb: true,
 	},
 	// {
 	// 	Id: 6,
@@ -64,7 +77,7 @@ const projects = [
 	// 	deployed_URL: "https://dashboard.heroku.com/apps/stormy-gorge-58008",
 	// 	image:
 	// 		"https://cdn.midjourney.com/f7f033e3-764a-4428-8e47-c7887f972597/grid_0.png",
-	// 	fullStack: false,
+	// 	liveWeb: false,
 	// },
 	{
 		Id: 7,
@@ -76,7 +89,7 @@ const projects = [
 		deployed_URL: "https://watch.screencastify.com/v/pOD8r52BeDaPn99UDrVn", //todo do a new walkthrough
 		image:
 			"https://media.discordapp.net/attachments/1042540591650717738/1083449688356835388/Rhys_Smoker_a_mongoose_wearing_a_monocle_as_an_old-fashioned_bo_b19c0c11-8903-4eb9-8f17-ce7004c1fdd4.png?width=1051&height=1051", //todo take a screenshot
-		fullStack: false,
+		liveWeb: false,
 	},
 	{
 		Id: 7,
@@ -88,7 +101,7 @@ const projects = [
 		deployed_URL: "https://damp-coast-38671.herokuapp.com/",
 		image:
 			"https://cdn.midjourney.com/c07d972b-8931-4161-9b7b-e3618d096e84/grid_0.png",
-		fullStack: false,
+		liveWeb: false,
 	},
 	{
 		Id: 8,
@@ -100,7 +113,7 @@ const projects = [
 		deployed_URL: "https://mail-me-seeds.herokuapp.com/",
 		image:
 			"https://cdn.midjourney.com/dfc5bb94-1992-4f82-9c0e-ee38621a0bef/grid_0.png",
-		fullStack: true,
+		fullStack: false,
 	},
 	{
 		Id: 9,
@@ -112,7 +125,7 @@ const projects = [
 		deployed_URL: "https://beat-the-bots.herokuapp.com/",
 		image:
 			"https://cdn.midjourney.com/a7dd1cb8-0fe2-4f21-be44-6967b38b15b7/grid_0.png",
-		fullStack: true,
+		liveWeb: true,
 	},
 	{
 		Id: 9,
@@ -125,7 +138,7 @@ const projects = [
 		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/fade-and-flow/",
 		image:
 			"https://cdn.midjourney.com/ba7a37d1-d4d9-4e15-92c0-de6b52783426/0_2.png",
-		fullStack: true,
+		liveWeb: true,
 	},
 	{
 		Id: 10,
@@ -133,103 +146,38 @@ const projects = [
 		subtitle:
 			"A score calculator for the 'Here Kitty Kitty' board game by Fireside Games.",
 		description:
-			"A React-based application that enables players to easily calculate their scores after playing 'Here Kitty Kitty'. It includes interactive elements for score tallying and utilizes state management for dynamic updates.",
+			"An app that enables players to easily calculate their scores after playing 'Here Kitty Kitty'. It includes interactive elements for score tallying and utilizes state management for dynamic updates.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/here-kitty-kitty-score-calculator",
 		deployed_URL:
 			"https://mern-ing-the-midnight-oil.github.io/here-kitty-kitty-score-calculator",
 		image:
 			"https://cdn.midjourney.com/7e5e1040-e3a8-4bf1-8f2d-227d2751aeef/0_0.webp",
-		fullStack: true,
-	},
-	{
-		Id: 1,
-		title: "REACT HOOKS Bananarama Grams",
-		subtitle: "A front-end crossword puzzle-like game built with React.",
-		description:
-			"A React app showcasing use of useState, useEffect, and useRef and custom CSS for visual effects. The game partially simulates a popular crossword-style tabletop game.",
-		repo: "https://github.com/MERN-ing-the-midnight-oil/tiles-game",
-		deployed_URL: "https://mern-ing-the-midnight-oil.github.io/tiles-game/",
-		image:
-			"https://cdn.midjourney.com/ba0c7b4f-c62e-4f58-93b1-ee32edd9a446/0_2.webp",
-		fullStack: true,
+		liveWeb: true,
 	},
 ];
 
 const Portfolio = () => {
-	const fullStackProjects = projects.filter((project) => project.fullStack);
-	const nonFullStackProjects = projects.filter((project) => !project.fullStack);
+	const fullStackProjects = projects.filter((project) => project.liveWeb);
+	//const nonFullStackProjects = projects.filter((project) => !project.liveWeb);
 	return (
-		<div>
-			<h1>Live web applications</h1>
-			{fullStackProjects.map((project) => (
-				<div class="d-inline-flex p-2">
-					<Card className="project-card square border border-3">
-						<img
-							src={project.image}
-							className="project-img"
-							alt="..."
-						/>
-						<Card.Body
-							//p-3 and mb-2 are padding and margin from bootstrap
-							className="p-3 mb-2 hideable project-content"
-							// style={{ backgroundColor: "#606c38" }}
-						>
-							<Card.Title>{project.title}</Card.Title>
-							<Card.Subtitle
-								className="mb-2"
-								style={{ color: "#dda15e" }}>
-								{project.subtitle}
-							</Card.Subtitle>
-							<Card.Text>{project.description}</Card.Text>
-							<a
-								className="card-link App-link"
-								href={project.repo}>
-								Repository
-							</a>
-							<Card.Link
-								className="App-link"
-								href={project.deployed_URL}>
-								Deployed
-							</Card.Link>
-						</Card.Body>
-					</Card>
-				</div>
-			))}
-			<h2>Demonstration projects </h2>
-			{nonFullStackProjects.map((project) => (
-				<div class="d-inline-flex p-2">
-					<Card className="project-card square border border-3">
-						<img
-							src={project.image}
-							className="project-img"
-							alt="..."
-						/>
-						<Card.Body
-							//p-3 and mb-2 are padding and margin from bootstrap
-							className="p-3 mb-2 hideable project-content"
-							// style={{ backgroundColor: "#606c38" }}
-						>
-							<Card.Title>{project.title}</Card.Title>
-							<Card.Subtitle
-								className="mb-2"
-								style={{ color: "#dda15e" }}>
-								{project.subtitle}
-							</Card.Subtitle>
-							<Card.Text>{project.description}</Card.Text>
-							<a
-								className="card-link App-link"
-								href={project.repo}>
-								Repository
-							</a>
-							<Card.Link
-								className="App-link"
-								href={project.deployed_URL}>
-								Deployed
-							</Card.Link>
-						</Card.Body>
-					</Card>
-				</div>
-			))}
+		<div style={{ paddingTop: "40px", alignContent: "Center" }}>
+			<h1 style={{ textAlign: "Center" }}>
+				My Live React-based Web Applications
+			</h1>
+			<div className="card-container">
+				{/* Add this wrapper with a class */}
+				{fullStackProjects.map((project) => (
+					<CustomCard
+						key={project.Id}
+						title={project.title}
+						subtitle={project.subtitle}
+						description={project.description}
+						repo={project.repo}
+						deployedURL={project.deployed_URL}
+						image={project.image}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };

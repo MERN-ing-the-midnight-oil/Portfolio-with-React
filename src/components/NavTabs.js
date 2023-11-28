@@ -74,6 +74,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 						alignItems: "flex-start", // Aligns to the start of the flex container
 						width: "100%",
 						position: "relative",
+						paddingBottom: "10px",
 					}}>
 					{/* Portrait and buttons container  */}
 					<div
@@ -94,7 +95,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 							width={250}
 							style={{
 								border: "1px solid",
-								borderRadius: "50%",
+								borderRadius: "0",
 							}}
 							id="rhys-portrait"
 						/>
@@ -107,10 +108,10 @@ function NavTabs({ currentPage, handlePageChange }) {
 								color: colorOil,
 								backgroundColor: colorMidnight,
 								padding: ".2rem 0.6rem",
-								borderTopLeftRadius: "0.5rem",
-								borderTopRightRadius: "0.5rem",
-								borderBottomLeftRadius: "0",
-								borderBottomRightRadius: "0",
+								// borderTopLeftRadius: "0.5rem",
+								// borderTopRightRadius: "0.5rem",
+								// borderBottomLeftRadius: "0",
+								// borderBottomRightRadius: "0",
 							}}>
 							Rhys Smoker
 						</figcaption>
@@ -122,7 +123,10 @@ function NavTabs({ currentPage, handlePageChange }) {
 							{/* Navigation links */}
 							<ul
 								className="nav nav-tabs"
-								style={{ marginTop: "1rem", textAlign: "center" }}>
+								style={{
+									marginTop: "1rem",
+									textAlign: "center",
+								}}>
 								<li className="nav-item">
 									<a
 										href="#aboutMe"
