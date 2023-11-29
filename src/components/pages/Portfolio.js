@@ -155,26 +155,27 @@ const projects = [
 		liveWeb: true,
 	},
 ];
+const liveProjects = projects.filter((item) => item.liveWeb);
+
+//const nonFullStackProjects = projects.filter((project) => !project.liveWeb);
 
 const Portfolio = () => {
-	const fullStackProjects = projects.filter((project) => project.liveWeb);
-	//const nonFullStackProjects = projects.filter((project) => !project.liveWeb);
 	return (
 		<div style={{ paddingTop: "40px", alignContent: "Center" }}>
 			<h1 style={{ textAlign: "Center" }}>
 				My Live React-based Web Applications
 			</h1>
 			<div className="card-container">
-				{/* Add this wrapper with a class */}
-				{fullStackProjects.map((project) => (
+				{/* .map() is called on the liveProjects array, .map()iterates over each element of the array and for each element calls it "app" and passes it to the callback function ((app) => <CustomCard .../>)which takes "app" as it's parameter and returns a component populated with the app properties. The new array of custom components are now part of the React virtual DOM , which is instructions to create the DOM. We don't need an actual array of custom cards.   */}
+				{liveProjects.map((app) => (
 					<CustomCard
-						key={project.Id}
-						title={project.title}
-						subtitle={project.subtitle}
-						description={project.description}
-						repo={project.repo}
-						deployedURL={project.deployed_URL}
-						image={project.image}
+						key={app.Id}
+						title={app.title}
+						subtitle={app.subtitle}
+						description={app.description}
+						repo={app.repo}
+						deployedURL={app.deployed_URL}
+						image={app.image}
 					/>
 				))}
 			</div>

@@ -10,11 +10,16 @@ const CustomCard = ({
 }) => {
 	return (
 		<div className="custom-card">
-			<img
-				src={image}
-				alt={title}
-				className="custom-card-img"
-			/>
+			<a
+				href={deployedURL}
+				target="_blank"
+				rel="noopener noreferrer">
+				<img
+					src={image}
+					alt={title}
+					className="custom-card-img"
+				/>
+			</a>
 			<div className="custom-card-body">
 				<h3 className="custom-card-title">{title}</h3>
 				<h5 className="custom-card-subtitle">{subtitle}</h5>
@@ -25,14 +30,14 @@ const CustomCard = ({
 						className="custom-card-link"
 						target="_blank"
 						rel="noopener noreferrer">
-						Repository
+						{repo ? "Repository" : "Repo URL Missing"}
 					</a>
 					<a
 						href={deployedURL}
 						className="custom-card-link"
 						target="_blank"
 						rel="noopener noreferrer">
-						Deployed
+						{deployedURL ? "Deployed" : "Deployed URL Missing"}
 					</a>
 				</div>
 			</div>

@@ -103,12 +103,14 @@ header {
 }
 
 .custom-card {
-    flex: 0 0 300px; /* Fixed width, no growth, no shrink */
-    margin: 10px; /* Margin as per your design */
-    border: 1px solid black;
-    border-radius: 0px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Added flex display */
+  flex-direction: column; /* Stack children vertically */
+  flex: 0 0 300px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 0px;
+  overflow: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .custom-card-img {
     width: 100%;
@@ -118,7 +120,7 @@ header {
 .custom-card-body {
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  flex-grow: 1; /* Added flex-grow */
 }
 
 .custom-card-title {
@@ -132,20 +134,21 @@ header {
 }
 
 .custom-card-text {
+  /* flex-grow tells the element to take up all available space */
+    flex-grow: 1;
     color: #333;    
     padding: 10px;
 }
 
 .custom-card-link {
-    
+    margin-left:  10px;
+    margin-right:  10px;
     color: #007bff;
 }
 
 .custom-card-links-container {
-  margin-top: auto;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
 }
 
 /* Media query for smaller screens */
