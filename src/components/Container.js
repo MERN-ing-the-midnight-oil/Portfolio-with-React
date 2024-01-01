@@ -3,26 +3,18 @@
 
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
-import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Footer from "./Footer";
 
 //export default function Container() {
 export default function Container() {
-	const [currentPage, setCurrentPage] = useState("aboutMe"); //default state
+	const [currentPage, setCurrentPage] = useState("portfolio"); //default state
 
 	// This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
 	const renderPage = () => {
-		if (currentPage === "aboutMe") {
-			return <AboutMe />;
-		}
 		if (currentPage === "portfolio") {
 			return <Portfolio />;
-		}
-		if (currentPage === "contact") {
-			return <Contact />;
 		}
 		return <Resume />;
 	};
