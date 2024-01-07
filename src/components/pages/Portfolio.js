@@ -100,8 +100,7 @@ const projects = [
 		description:
 			"A comprehensive full stack MERN application demonstrating dynamic data fetching and visualization for NOAA fisheries bycatch rates. Features include viewing catch records by year or date range, filtering by vessel and season, and charting catch records using Material-UI and Recharts for a responsive UI.",
 		repo: "https://github.com/MERN-ing-the-midnight-oil/bycatch-rates-by-week-and-vessel",
-		deployed_URL:
-			"https://github.com/MERN-ing-the-midnight-oil/bycatch-rates-by-week-and-vessel#readme",
+		deployed_URL: "https://bycatch-widget-1506213f206c.herokuapp.com/",
 		image:
 			"https://cdn.midjourney.com/ec411195-821e-4f8d-8e9e-0ff324d3b9fb/0_0.webp",
 		liveWeb: true,
